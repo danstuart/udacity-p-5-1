@@ -80,7 +80,7 @@ $(document).ready(function() {
                     timeout: 6000
                 })
                 .fail(function(e) {
-                    alert('We are experiencing problems with Fourqquare. We apologise for the ' +
+                    alert('We are experiencing problems with Foursquare. We apologise for the ' +
                         'inconvenience. Try later.');
                     // console.log("error " + e);
                     /** even if Foursquare API fails, we still have the local data, so show it */
