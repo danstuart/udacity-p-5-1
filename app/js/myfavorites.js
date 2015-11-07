@@ -1,0 +1,73 @@
+var myfavs = [{
+    cat: 'my favorites',
+    name: 'Warner Yard Centre',
+    address: 'EC1R 5Ey',
+    city: 'london',
+    lat: 51.5230606,
+    lng: -0.1135005,
+    description: 'Warner Yard is a co-working space for technology companies.',
+    url: 'http://www.warneryard.com/',
+    img: '',
+    type: 'my favourites',
+    visible: true
+}, {
+    cat: 'my favorites',
+    name: 'Google',
+    address: 'SW1W 9tq',
+    city: 'london',
+    lat: 51.49496560000001,
+    lng: -0.14667389999999614,
+    description: 'The great big baddy',
+    url: 'https://www.google.com',
+    img: '',
+    type: 'my favourites',
+    visible: true
+}, {
+    cat: 'my favorites',
+    name: 'Leather Lane',
+    address: 'EC1N 7TJ',
+    city: 'london',
+    lat: 51.5201209,
+    lng: -0.1116063,
+    description: 'Where 5 quid went to die for lunch.',
+    url: '',
+    img: '',
+    type: 'my favourites',
+    visible: true
+}, {
+    cat: 'my favorites',
+    name: 'Wholefoods Market',
+    address: 'Piccadilly Circus',
+    city: 'london',
+    lat: 51.5105257,
+    lng: -0.1382659,
+    description: 'My go to for munch and lunch!',
+    url: 'http://www.wholefoodsmarket.com/stores/piccadilly',
+    img: '',
+    type: 'my favourites',
+    visible: true
+}, {
+    cat: 'my favorites',
+    name: 'Gails Artisan Bakery',
+    address: 'EC1R 4QL',
+    city: 'london',
+    lat: 51.5259358,
+    lng: -0.1104455,
+    description: 'Where I got fat.',
+    url: 'http://www.gailsbread.co.uk/',
+    img: '',
+    type: 'my favourites',
+    visible: true
+}, {
+    cat: 'my favorites',
+    name: 'Impact Hub Westminster',
+    address: 'SW1Y 4TE',
+    city: 'london',
+    lat: 51.5078348,
+    lng: -0.1316065,
+    description: 'A great coworking space',
+    url: 'http://westminster.impacthub.net/',
+    img: '',
+    type: 'my favourites',
+    visible: true
+}, ];
