@@ -45,6 +45,6 @@ gulp-minify-html
 gulp-minify-css
 
 To load the modules execute:
-    npm install
+    npm i -D gulp-load-plugins gulp-concat browser-sync del gulp gulp-jscs gulp-jshint gulp-notify psi gulp-rename run-sequence gulp-size gulp-uglify gulp-minify-html gulp-minify-css
 
 Phew! done.
