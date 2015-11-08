@@ -3,64 +3,157 @@
 * My TS London
 */
 
-body {
-    font-family: Roboto, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-a {
-    color: #039be5;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #b6b6b6;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 30px;
+}
+/* here goes my hero!!! */
+
+#hero {
+    position: relative;
+    width: 100%;
+    background: url(../img/Aboutus_hero-small.jpg);
+    background-size: cover;
+}
+.hero-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -106.5px;
+    text-align: center;
+    color: #fff;
+}
+.hero-info h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+.hero-info h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+.hero-info h3.last {
+    margin-bottom: 30px;
+}
+.hero-info a {
+    color: #fff;
     text-decoration: none;
+    font-weight: 400;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    margin: 35px 0px;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.hero-info a:hover {
+    border-width: 1px;
+    opacity: .7;
+}
+/* control bar */
+
+#control-bar {
+    background-color: #512da8;
+    width: 100%;
+    padding: 10px;
+    min-height: 55px;
+    position: relative;
+}
+.ticker {
+    border: solid 1px;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    color: #222;
+    max-width: 300px;
+}
+/* main: map * places-list */
+
+#main {
+    width: 100%;
+    position: relative;
+    height: 450px;
 }
 #map-canvas {
+    background-color: #E9E5DC;
+    float: left;
+    width: 70%;
     height: 100%;
-    width: 78%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    opacity: .90;
 }
-#side-bar {
-    position: absolute;
-    padding: 1rem 0.5rem 1rem 1.5rem;
-    z-index: 1;
+#places {
+    background-color: #A5D6A7;
+    ;
     height: 100%;
-    width: 20%;
-    left: 0;
-    top: 0;
-    overflow-y: scroll;
-    background-color: #512da8;
-    color: #fff;
+    width: 30%;
+    float: right;
+    border-left: 1px solid #b6b6b6;
+    padding: 10px;
 }
 ul {
     list-style-type: none;
     border: 0;
     padding: 0;
 }
-.ticker {
-    border: solid 1px;
-    background-color: #b6b6b6;
-    padding-left: 0.5rem;
-    color: #222;
+button {
+    padding: 3px 5px 4px;
+    cursor: pointer;
+    font-size: 10px;
 }
-@media screen and (max-width: 840px) {
-    h2,
-    #side-bar,
-    #header-title,
-    #header-about,
-    #header-subtitle,
-    #ticker,
-    button,
-    #input {
-        font-size: 60%;
-        max-width: 100%;
+/* footer */
+
+footer {
+    padding: 10px;
+    color: #666;
+    text-align: center;
+    font-size: .8em;
+    background-color: #b6b6b6;
+}
+/* media queries */
+
+@media(min-width: 1024px) {
+    main {
+        height: 600px;
     }
-    input {
-        max-width: 100%;
+    #hero {
+        height: 40%;
     }
-    .marker-legend {
-        width: 20%;
-        height: 20%;
+    #places {
+        width: 25%;
+        min-height: 700px;
+    }
+    #map-canvas {
+        width: 75%;
+        min-height: 700px;
+    }
+}
+@media(max-width: 768px) {
+    #hero {
+        height: 40%;
+    }
+    #places {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    #map-canvas {
+        float: none;
+        width: 100%;
+        height: 320px;
     }
 }

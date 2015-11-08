@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>London: Nearby Places from my Techstars days & Local Coworking Spaces</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Daniel Stuart">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -13,18 +12,23 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="map-canvas">
-        </div>
-        <div id="side-bar">
+
+    <section id="hero">
+        <div class="hero-info">
             <h1>My TS London</h1>
-            <p id="header-title">by <a href="https://twitter.com/danstuart">Daniel Stuart</a>
-            </p>
-            <p id="header-about"><a href="https://ca.linkedin.com/in/danielstuart">About</a>
-            </p>
-            <p id="header-subtitle">Udacity FE Nano Project 5-1</p>
-            <p data-bind="text: ticker,flash: ticker" class="ticker"></p>
-            <h3 id="section-title">Places</h3>
+            <h3>Udacity FE Nano Project 5-1</h3>
+            <h3 class="last">by Daniel Stuart</h3>
+            <p id="header-about"><a href="https://ca.linkedin.com/in/danielstuart">About Me</a>
+        </div>
+    </section>
+
+    <div id="control-bar">
+        <p data-bind="text: ticker,flash: ticker" class="ticker"></p>
+    </div>
+
+    <main>
+        <div id="places">
+            <!--<h3 id="section-title">Places</h3>-->
             <h4>My Faves<img class="marker-legend" src="http://maps.google.com/mapfiles/ms/icons/green-dot.png"/></h4>
             <ul data-bind="foreach: myLocations">
                 <li>
@@ -34,14 +38,22 @@
             <h4>Local Coffee with WiFi<img class="marker-legend" src="http://maps.google.com/mapfiles/ms/icons/purple-dot.png"/></h4>
             <input placeholder="Search Foursquare" type="search" data-bind="value: query, valueUpdate: 'keyup'">
             <ul data-bind="foreach: computedLocations">
-                <li>
+                <li class="">
                     <button data-bind="click: $root.locationClickHandler,text: name"></button>
                 </li>
             </ul>
         </div>
-    </div>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/knockout-3.2.0.js"></script>
+        <div id="map-canvas"></div>
+    </main>
+    <footer>
+        Made by Daniel Stuart.
+    </footer>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdc6CswcgQQm7wqtnb5Sepcw2X_opYfvA">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="js/myfavorites.js"></script>
     <script src="js/main.js"></script>
 </body>

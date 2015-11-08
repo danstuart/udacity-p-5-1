@@ -71,7 +71,7 @@ $(document).ready(function() {
             var foursquareUrl = 'https://api.foursquare.com/v2/venues/explore?' +
                 'client_id=' + CLIENT_ID + '&client_secret=' + CLIENT_SECRET +
                 '&v=20150101&ll=' + self.mainLocation().lat + ',' + self.mainLocation().lng +
-                '&radius=3500' + '&query=' + self.searchcategory;
+                '&radius=280' + '&query=' + self.searchcategory;
             // using ajax instead of getJSON (which is a wrapper anyway) so that
             // I can set a timeout
             $.ajax({
