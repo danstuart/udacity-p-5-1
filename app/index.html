@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Daniel Stuart">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdc6CswcgQQm7wqtnb5Sepcw2X_opYfvA&libraries=geometry">
-    </script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -30,13 +28,13 @@
     <main>
         <div id="places">
             <!--<h3 id="section-title">Places</h3>-->
-            <h4>My Faves<img class="marker-legend" src="http://maps.google.com/mapfiles/ms/icons/green-dot.png"/></h4>
+            <h4>My Faves<img class="marker-legend" alt="green-dot" src="http://maps.google.com/mapfiles/ms/icons/green-dot.png"/></h4>
             <ul data-bind="foreach: myLocations">
                 <li>
                     <button data-bind="click: $root.locationClickHandler,text: name"></button>
                 </li>
             </ul>
-            <h4>Local Coffee with WiFi<img class="marker-legend" src="http://maps.google.com/mapfiles/ms/icons/purple-dot.png"/></h4>
+            <h4>Local Coffee with WiFi<img class="marker-legend" alt="green-dot" src="http://maps.google.com/mapfiles/ms/icons/purple-dot.png"/></h4>
             <input placeholder="Search Foursquare" type="search" data-bind="value: query, valueUpdate: 'keyup'">
             <ul data-bind="foreach: computedLocations">
                 <li class="">
